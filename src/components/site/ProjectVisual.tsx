@@ -244,7 +244,7 @@ function CityBusDiagram({ l }: { l: DiagramLabels["citybus"] }) {
         </g>
       ))}
       {services.map((label, i) => (
-        <Node key={label} x={xs[i]} y={184} w={132} h={58} label={label} size={15} />
+        <Node key={label} x={xs[i] ?? 0} y={184} w={132} h={58} label={label} size={15} />
       ))}
       {xs.map((x) => (
         <g key={`k${x}`}>

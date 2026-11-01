@@ -88,6 +88,8 @@ export function Projects() {
     );
   };
 
+  if (!featured) return null;
+
   return (
     <section
       id={SECTION_IDS.projects}
