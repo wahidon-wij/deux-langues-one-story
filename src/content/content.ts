@@ -341,7 +341,7 @@ const fr: Content = {
     },
     cloudinfragen: {
       editor: "VS Code",
-      prompt: "description en langage naturel",
+      prompt: "langage naturel",
       model: "LLM",
       output: "main.tf",
     },
@@ -660,7 +660,7 @@ const en: Content = {
     },
     cloudinfragen: {
       editor: "VS Code",
-      prompt: "natural-language description",
+      prompt: "natural language",
       model: "LLM",
       output: "main.tf",
     },
