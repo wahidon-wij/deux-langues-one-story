@@ -197,3 +197,14 @@
     text-decoration-thickness: 2px;
   }
 }
+
+/* Project diagrams: quiet dotted surface behind the drawn schematics */
+@utility diagram-surface {
+  background-color: var(--color-muted);
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--color-foreground) 13%, transparent) 1px,
+    transparent 1.2px
+  );
+  background-size: 22px 22px;
+  background-position: 11px 11px;
+}

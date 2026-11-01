@@ -72,7 +72,6 @@ export interface DiagramLabels {
     api: string;
     models: string;
     dashboard: string;
-    tabs: [string, string, string];
   };
   cloudinfragen: {
     editor: string;
@@ -337,11 +336,10 @@ const fr: Content = {
       api: "API Spring Boot",
       models: "modèles d'IA",
       dashboard: "tableau de bord",
-      tabs: ["carte", "qualité", "alertes"],
     },
     cloudinfragen: {
       editor: "VS Code",
-      prompt: "description en langage naturel",
+      prompt: "langage naturel",
       model: "LLM",
       output: "main.tf",
     },
@@ -656,11 +654,10 @@ const en: Content = {
       api: "Spring Boot API",
       models: "AI models",
       dashboard: "dashboard",
-      tabs: ["map", "quality", "alerts"],
     },
     cloudinfragen: {
       editor: "VS Code",
-      prompt: "natural-language description",
+      prompt: "natural language",
       model: "LLM",
       output: "main.tf",
     },
