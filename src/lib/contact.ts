@@ -70,8 +70,8 @@ export function buildMailto(values: ContactValues, labels: MailLabels): string {
     message,
     "",
     "—",
-    `${labels.nameLine} : ${name}`,
-    `${labels.emailLine} : ${email}`,
+    `${labels.nameLine} ${name}`,
+    `${labels.emailLine} ${email}`,
   ].join("\r\n");
 
   return `mailto:${site.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

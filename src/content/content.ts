@@ -482,8 +482,8 @@ const fr: Content = {
     },
     mail: {
       subject: "Contact depuis le portfolio",
-      nameLine: "Nom",
-      emailLine: "E-mail",
+      nameLine: "Nom :",
+      emailLine: "E-mail :",
     },
     emailLinkLabel: "E-mail",
     linkedinLinkLabel: "LinkedIn",
@@ -798,8 +798,8 @@ const en: Content = {
     },
     mail: {
       subject: "Contact from the portfolio",
-      nameLine: "Name",
-      emailLine: "Email",
+      nameLine: "Name:",
+      emailLine: "Email:",
     },
     emailLinkLabel: "Email",
     linkedinLinkLabel: "LinkedIn",
