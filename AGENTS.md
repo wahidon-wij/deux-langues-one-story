@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep homepage sections as focused components in `src/components/site` and compose them at `/` to isolate content, interactions, and accessibility.
