@@ -236,8 +236,6 @@ const fr: Content = {
           "DNS, stockage objet et namespaces gérés et nettoyés automatiquement.",
           "Agent de build conteneurisé sur mesure, avec les identifiants stockés dans le coffre-fort Jenkins.",
         ],
-        // [À VALIDER : chiffre cible, à remplacer par une mesure réelle ou à retirer]
-        result: "Environnement prêt en moins de 5 minutes.",
         stack: ["Jenkins", "Kubernetes", "Helm", "Docker", "Python", "Jinja2"],
         repository: "",
         visualAlt:
@@ -261,7 +259,7 @@ const fr: Content = {
         stack: [
           "Spring Boot",
           "Kafka",
-          "React", // [À VALIDER : React ou Angular]
+          "Angular",
           "PostgreSQL",
           "MongoDB",
           "Redis",
@@ -554,8 +552,6 @@ const en: Content = {
           "DNS, object storage and namespaces managed and cleaned up automatically.",
           "Custom containerized build agent, with credentials stored in the Jenkins vault.",
         ],
-        // [À VALIDER : chiffre cible, à remplacer par une mesure réelle ou à retirer]
-        result: "Environment ready in under 5 minutes.",
         stack: ["Jenkins", "Kubernetes", "Helm", "Docker", "Python", "Jinja2"],
         repository: "",
         visualAlt:
@@ -579,7 +575,7 @@ const en: Content = {
         stack: [
           "Spring Boot",
           "Kafka",
-          "React", // [À VALIDER : React ou Angular]
+          "Angular",
           "PostgreSQL",
           "MongoDB",
           "Redis",

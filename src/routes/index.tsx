@@ -1,24 +1,58 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Education } from "@/components/site/Education";
+import { Experience } from "@/components/site/Experience";
+import { Footer } from "@/components/site/Footer";
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { LanguageProvider, useLanguage } from "@/components/site/LanguageProvider";
+import { Projects } from "@/components/site/Projects";
+import { Skills } from "@/components/site/Skills";
+import { Contact } from "@/components/site/Contact";
+import { content } from "@/content/content";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: content.fr.meta.title },
+      { name: "description", content: content.fr.meta.description },
+      { property: "og:title", content: content.fr.meta.title },
+      { property: "og:description", content: content.fr.meta.description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <LanguageProvider>
+      <Portfolio />
+    </LanguageProvider>
+  );
+}
+
+function Portfolio() {
+  const { t } = useLanguage();
+
+  return (
+    <>
+      <a
+        href="#main-content"
+        className="fixed left-4 top-4 z-50 -translate-y-20 rounded-sm bg-primary px-4 py-2 font-medium text-primary-foreground focus:translate-y-0"
+      >
+        {t.a11y.skipToContent}
+      </a>
+      <Header />
+      <main id="main-content" tabIndex={-1} className="outline-none">
+        <Hero />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Education />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
