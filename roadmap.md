@@ -4,7 +4,7 @@
 - [x] Design system (3 base colors + 1 accent, light/dark, self-hosted fonts)
 - [x] Bilingual content (FR source, EN translation) with toggle
 - [x] Header, hero, projects gallery + detail section, experience, skills, education, contact (mailto), footer
-- [x] Homepage composed from the bilingual portfolio sections
+- [ ] Restore the homepage composition and verify the portfolio in the live preview
 - [x] Square photo (public/photo.jpg) and sanitized French CV (public/cv.pdf)
 - [x] Removed unverified featured-project timing claim
 - [x] CityBus front-end set to Angular, matching the supplied CV
